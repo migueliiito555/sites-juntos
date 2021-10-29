@@ -33,7 +33,7 @@ header {
     width: 100%;
     height: auto;
     font-size: 1.2em;
-    padding: 35px 0;
+    padding: 34px 0;
 }
 
 h1,
@@ -111,7 +111,7 @@ a:active {
 
 
 /* Media Queries */
-@media only screen and (max-width: 373px) {
+@media only screen and (max-width: 333px) {
     ul {
         padding: 7px;
     }
