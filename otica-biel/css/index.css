@@ -23,6 +23,7 @@
 
 body {
     background: black;
+    font-size: 1.5em;
 }
 
 
@@ -32,7 +33,6 @@ header {
     color: var(--cor1);
     width: 100%;
     height: auto;
-    font-size: 1.2em;
     padding: 34px 0;
 }
 
@@ -42,14 +42,14 @@ h3 {
 }
 
 h3 {
-    font-size: .6em;
+    font-size: .65em;
     opacity: .2;
 }
 
 
 /* Menu */
 ul {
-    max-width: 400px;
+    max-width: 480px;
     height: auto;  
     padding: 20px;
     border-radius: 10px;
@@ -63,11 +63,11 @@ ul {
 
 /* Botões */
 .direita {
-    margin-left: 2px;
+    margin-left: -2px;
 }
 
 .esquerda {
-    margin-right: 2px;
+    margin-right: -2px;
 }
 
 div.inferior {
@@ -79,17 +79,14 @@ a {
     display: list-item;
     background: var(--cor5);
     color: white;
+    font-size: .8em;
     height: auto;
-    padding-top: 190px;
+    padding-top: 220px;
     padding-bottom: 20px;
     border-radius: 7px;
     text-align: center;
     text-decoration: none;
     transition: background .3s;
-}
-
-#trabalhe {
-    padding-top: 171px;
 }
 
 a > img {
@@ -111,25 +108,27 @@ a:active {
 
 
 /* Media Queries */
-@media only screen and (max-width: 333px) {
+@media only screen and (max-width: 440px) {
     ul {
         padding: 7px;
     }
 
     a {
         padding-top: 170px;
-    }
-
-    #trabalhe {
-        padding-top: 151px;
+        font-size: .6em;
     }
     
     .esquerda {
-        margin-right: -4.5px;
+        margin-right: -8.5px;
     }
 
     .direita {
-        margin-left: -4.5px;
+        margin-left: -8.5px;
+    }
+
+    a > img {
+        max-width: 62%;
+        left: 20%;
     }
 
     div.inferior {
