@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+
+/* Configurações Iniciais */
+* {
+    -webkit-user-drag: none;
+    user-select: none;
+    margin: 0;
+    outline: none;
+    font-family: "Rubik", sans-serif;
+}
+
+:root {
+    --cor1: #FFD819;
+    --cor2: #F0AB0C;
+    --cor3: #FF9100;
+    --cor4: #E55F0B;
+    --cor5: #8F1C00;
+}
+
+
+/* Cabeçalho */
+header {
+    background: var(--cor5);
+    color: var(--cor1);
+    width: 100%;
+    height: auto;
+    font-size: 1.2em;
+    padding: 35px 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+/* Menu */
+ul {
+    background: white;
+    max-width: 400px;
+    height: auto;  
+    padding: 20px;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin: auto;
+    list-style: none;
+    columns: 2;
+}
+
+
+/* Botões */
+a {
+    display: list-item;
+    background: var(--cor5);
+    color: white;
+    max-width: 100%;
+    height: auto;
+    padding-top: 210px;
+    padding-bottom: 20px;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    transition: background .3s;
+}
+
+#trabalhe {
+    padding-top: 191px;
+}
+
+#preco,
+#fale {
+    margin-right: 5px;
+}
+
+.debaixo {
+    margin-top: 20px;
+}
+
+
+/* Reações */
+a:hover {
+    background: rgb(119, 3, 3);
+}
+
+a:active {
+    background: yellow;
+}
+
+
+/* Rodapé */
+footer {
+    background: var(--cor5);
+    color: white;
+    text-align: center;
+    max-width: 100%;
+    padding: 10px;
+    margin-top: 6.8%;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 420px) {
+    a {
+        font-size: .8em;
+        padding-top: 130px;
+    }
+
+    #trabalhe {
+        padding-top: 115px;
+    }
+}
