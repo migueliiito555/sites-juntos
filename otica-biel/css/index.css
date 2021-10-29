@@ -38,7 +38,6 @@ h1 {
 
 /* Menu */
 ul {
-    background: white;
     max-width: 400px;
     height: auto;  
     padding: 20px;
@@ -53,6 +52,7 @@ ul {
 
 /* Botões */
 a {
+    position: relative;
     display: list-item;
     background: var(--cor5);
     color: white;
@@ -64,6 +64,13 @@ a {
     text-align: center;
     text-decoration: none;
     transition: background .3s;
+}
+
+a > img {
+    position: absolute;
+    max-width: 100%;
+    top: 0;
+    left: 0;
 }
 
 #trabalhe {
