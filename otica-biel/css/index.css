@@ -21,9 +21,14 @@
 }
 
 
+body {
+    background: black;
+}
+
+
 /* Cabeçalho */
 header {
-    background: var(--cor5);
+    background: rgb(25, 25, 25);
     color: var(--cor1);
     width: 100%;
     height: auto;
@@ -31,8 +36,14 @@ header {
     padding: 35px 0;
 }
 
-h1 {
+h1,
+h3 {
     text-align: center;
+}
+
+h3 {
+    font-size: .6em;
+    opacity: .2;
 }
 
 
@@ -51,16 +62,27 @@ ul {
 
 
 /* Botões */
+.direita {
+    margin-left: 2px;
+}
+
+.esquerda {
+    margin-right: 2px;
+}
+
+div.inferior {
+    margin-top: 20px;
+}
+
 a {
     position: relative;
     display: list-item;
     background: var(--cor5);
     color: white;
-    max-width: 100%;
     height: auto;
     padding-top: 190px;
     padding-bottom: 20px;
-    border-radius: 6px;
+    border-radius: 7px;
     text-align: center;
     text-decoration: none;
     transition: background .3s;
@@ -68,15 +90,6 @@ a {
 
 #trabalhe {
     padding-top: 171px;
-}
-
-#preco,
-#fale {
-    margin-right: 5px;
-}
-
-.debaixo {
-    margin-top: 20px;
 }
 
 a > img {
@@ -97,34 +110,29 @@ a:active {
 }
 
 
-/* Rodapé */
-footer {
-    position: relative;
-    background: var(--cor5);
-    color: white;
-    text-align: center;
-    max-width: 100%;
-    padding: 10px;
-    bottom: -105px;
-}
-
 /* Media Queries */
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 373px) {
     ul {
         padding: 7px;
     }
-    
-    #preco,
-    #fale {
-        margin-right: -7px;
+
+    a {
+        padding-top: 170px;
     }
 
-    #trabalhe,
-    #testar {
-        margin-left: -7px;
+    #trabalhe {
+        padding-top: 151px;
     }
     
-    .debaixo {
+    .esquerda {
+        margin-right: -4.5px;
+    }
+
+    .direita {
+        margin-left: -4.5px;
+    }
+
+    div.inferior {
         margin-top: 7px;
     }
 }
